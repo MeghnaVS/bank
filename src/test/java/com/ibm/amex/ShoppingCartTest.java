@@ -56,4 +56,10 @@ public class ShoppingCartTest{
             Product book3 = new Product("Ant inAction", 19.95);
             cart.removeItem(book3);
     }
+	
+	@Test(expected=ProductNotFoundException.class)
+    public void testRemoveItemNotInCart1() throws ProductNotFoundException{
+            Product book3 = new Product("Ant inAction", 19.95);
+            cart.removeItem(book3);
+    }
 }
