@@ -23,6 +23,10 @@ public class CalculatorServiceTest{
 	public void testSum(){
 		assertEquals(15,service.doSum(10,5));
 	}	
+	@Test
+	public void testSum12(){
+		assertEquals(15,service.doSum(10,5));
+	}	
 
 	@Test
 	public void testNegativeSum(){
