@@ -27,6 +27,11 @@ public class ShoppingCartTest{
 	cart.empty();
         assertEquals(0, cart.getItemCount());
     }
+	@Test  
+    public void testEmpty() {
+	cart.empty();
+        assertEquals(0, cart.getItemCount());
+    }
 
     @Test	
     public void testBalance() {
